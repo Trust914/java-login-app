@@ -3,7 +3,7 @@ LABEL "Project"="Java-login-app"
 LABEL "Author"="Trust"
 
 RUN apt update && apt install maven -y
-RUN git clone -b vp-docker https://github.com/Trust914/java-login-app.git
+RUN git clone -b master https://github.com/Trust914/java-login-app.git
 RUN cd vprofile-repo && mvn install
 
 FROM tomcat:8-jre11
