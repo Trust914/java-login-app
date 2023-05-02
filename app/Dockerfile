@@ -4,7 +4,7 @@ LABEL "Author"="Trust"
 
 RUN apt update && apt install maven -y
 RUN git clone -b master https://github.com/Trust914/java-login-app.git
-RUN cd vprofile-repo && mvn install
+RUN cd java-login-app && mvn install
 
 FROM tomcat:8-jre11
 
