@@ -9,5 +9,5 @@ CREATE TABLE `Employee` (
     `username` varchar(250), 
     `password` varchar(250), 
     `regdate` timestamp, 
-    `primary` key (id) 
+    PRIMARY KEY (`id`) 
     );

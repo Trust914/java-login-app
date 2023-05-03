@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  UserDB:
+    image: truxxt/java-login-db:v1
+    ports:
+      - "3306:3306"
+    volumes:
+      - java-login-dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=Iamtheroot
+      - MYSQL_PASSWORD=Admin123
+
+  java-login-app:
+    image: truxxt/java-login-app:v1
+    ports:
+      - "8080:8080"
+    volumes:
+      - java-login-appdata:/usr/local/tomcat/webapps
+
+  java-login-web:
+    image: truxxt/java-login-web:v1
+    ports:
+      - "80:80"
+    
+
+volumes:
+  java-login-dbdata: {}
+  java-login-appdata: {}
