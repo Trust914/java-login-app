@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   java-app-db:
-    image: truxxt/java-login-db:v1
+    image: truxxt/java-app-db:v1
     ports:
       - "3306:3306"
     volumes:
@@ -12,7 +12,7 @@ services:
   java-login-app:
     image: truxxt/java-login-app:v1
     ports:
-      - "8080:8080"
+      - "9000:9000"
     volumes:
       - java-login-appdata:/usr/local/tomcat/webapps
 

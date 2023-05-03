@@ -12,5 +12,5 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 COPY --from=BUILD_IMAGE java-login-app/target/dptweb-1.0.war /usr/local/tomcat/webapps/ROOT.war
 
-EXPOSE 8080
+EXPOSE 9000
 CMD ["catalina.sh", "run"]

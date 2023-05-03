@@ -1,4 +1,4 @@
-FROM mysql:5.7.25
+FROM mysql:5.7
 LABEL "Project"="Java-login-app"
 LABEL "Author"="Trust"
 
