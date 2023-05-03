@@ -7,8 +7,7 @@ services:
     volumes:
       - java-login-dbdata:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=Iamtheroot
-      - MYSQL_PASSWORD=Admin123
+      - MYSQL_ROOT_PASSWORD=Admin123
 
   java-login-app:
     image: truxxt/java-login-app:v1
