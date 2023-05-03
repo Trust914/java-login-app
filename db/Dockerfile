@@ -7,3 +7,4 @@ ENV MYSQL_ROOT_PASSWORD="Admin123"
 
 
 ADD db_query.sql docker-entrypoint-initdb.d/db_query.sql
+EXPOSE 3306
