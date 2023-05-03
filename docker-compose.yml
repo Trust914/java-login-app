@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  UserDB:
+  java-app-db:
     image: truxxt/java-login-db:v1
     ports:
       - "3306:3306"
